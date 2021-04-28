@@ -1,0 +1,41 @@
+td{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 100px;
+}
+
+table{
+    position: relative;
+    left: 25%;
+}
+
+.one{   
+    border-bottom: 2px solid;
+    border-right: 2px solid;   
+}
+
+.dois{   
+    border-right: 2px solid;   
+}
+
+.tres{   
+    border-bottom: 2px solid;   
+}
+
+#risco{
+
+    border: 8px solid red;
+    position: absolute;
+    width: 800px;
+    top: 310px;
+    left: 250px;
+    display: none;
+} 
+
+
+
+
+
+
+
