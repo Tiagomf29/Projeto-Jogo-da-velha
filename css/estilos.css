@@ -1,6 +1,6 @@
 td{
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     text-align: center;
     font-size: 100px;
 }
@@ -28,10 +28,16 @@ table{
     border: 8px solid red;
     position: absolute;
     width: 800px;
-    top: 310px;
-    left: 250px;
+    top: 350px;
+    left: 220px;
     display: none;
 } 
+
+button{
+    width: 110px;
+    border-radius: 15px;
+    font-weight: bolder;
+}
 
 
 

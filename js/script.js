@@ -1,7 +1,18 @@
 
 var variavelAtual;  
 
-window.onload = function(){
+window.onload = function (){
+    let botao = document.querySelector("button");
+    botao.addEventListener('click', e =>{   
+        iniciaJogo();
+        let img = document.querySelector("img");
+        img.src="img/destrava.png";
+        botao.style.backgroundColor = "yellow";
+    });
+
+}
+
+function iniciaJogo(){
     
    let cel = document.querySelectorAll("td");
    cel.forEach(vlr =>{
@@ -41,22 +52,22 @@ function validaTermino(){
    }
 
    let dimH1 = (aJogo[1] == aJogo[2] && aJogo[1] == aJogo[3] && aJogo[1] !="");
-   if(dimH1)propriedades(0,100,0);        
+   if(dimH1)propriedades(0,165,220);        
    
    let dimH2 = (aJogo[4] == aJogo[5] && aJogo[4] == aJogo[6] && aJogo[4] !="");
    if(dimH2)propriedades(0,0,0); 
 
    let dimH3 = (aJogo[7] == aJogo[8] && aJogo[7] == aJogo[9] && aJogo[7] !="");
-   if(dimH3)propriedades(0,510,0); 
+   if(dimH3)propriedades(0,540,220); 
 
    let dimV1 = (aJogo[1] == aJogo[4] && aJogo[1] == aJogo[7] && aJogo[1] !="");    
-   if(dimV1)propriedades(90,0,35);    
+   if(dimV1)propriedades(90,0,27);    
    
    let dimV2 = (aJogo[2] == aJogo[5] && aJogo[2] == aJogo[8] && aJogo[2] !="");
-   if(dimV2)propriedades(90,0,0);   
+   if(dimV2)propriedades(90,0,212);   
    
    let dimV3 = (aJogo[3] == aJogo[6] && aJogo[3] == aJogo[9] && aJogo[3] !="");
-   if(dimV3)propriedades(90,0,450); 
+   if(dimV3)propriedades(90,0,400); 
 
    let dimD1 = (aJogo[1] == aJogo[5] && aJogo[1] == aJogo[9] && aJogo[1] !="");
    if(dimD1)propriedades(45,0,0); 
